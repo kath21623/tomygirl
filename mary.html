@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>How Was Your Day?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container {
+            background-color: #fff;
+            width: 80%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            text-align: center;
+        }
+        #question {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #yes-no-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        #submitButton {
+            background-color: #5cb85c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>How Was Your Day?</h1>
+        <p>Hi Ms. Mary Leuellyn Lauron, greeting you with a very good day. Since you haven't updated, I've created this website to ask you how your day went. I never got an update from you, I know we are not in good terms, but I just want to know how your day went.</p>
+
+        <div id="question">
+            <p>What time did you wake up?</p>
+            <select id="wakeUpTime">
+                <option value="5 am">5 am</option>
+                <option value="6 am">6 am</option>
+                <option value="7 am">7 am</option>
+                <option value="8 am">8 am</option>
+                <option value="9 am">9 am</option>
+            </select>
+        </div>
+
+        <div id="question">
+            <p>Did you eat breakfast?</p>
+            <input type="radio" id="yesBreakfastRadio" name="ateBreakfast" value="yes">
+            <label for="yesBreakfastRadio">Yes</label>
+            <input type="radio" id="noBreakfastRadio" name="ateBreakfast" value="no">
+            <label for="noBreakfastRadio">No</label>
+            <br>
+            <p>If yes, what did you eat?</p>
+            <input type="text" id="breakfastInput" placeholder="Your answer here">
+        </div>
+
+        <div id="question">
+            <p>What did you do today?</p>
+            <input type="text" id="activitiesInput" placeholder="Your answer here">
+        </div>
+
+        <div id="question">
+            <p>How are you feeling today?</p>
+            <select id="feelingInput">
+                <option value="😄">😄 Happy</option>
+                <option value="😥">😥 Sad</option>
+                <option value="😡">😡 Angry</option>
+                <option value="😴">😴 Tired</option>
+                <option value="😃">😃 Excited</option>
+            </select>
+        </div>
+
+        <div id="question">
+            <p>How's your day today?</p>
+            <input type="radio" id="goodRadio" name="dayRating" value="good">
+            <label for="goodRadio">Good</label>
+            <input type="radio" id="veryGoodRadio" name="dayRating" value="very good">
+            <label for="veryGoodRadio">Very Good</label>
+            <input type="radio" id="badRadio" name="dayRating" value="bad">
+            <label for="badRadio">Bad</label>
+            <input type="radio" id="neitherRadio" name="dayRating" value="neither">
+            <label for="neitherRadio">Neither Bad nor Good</label>
+        </div>
+
+        <div id="question">
+            <p>What was the best thing that happened today?</p>
+            <input type="text" id="bestThingInput" placeholder="Your answer here">
+        </div>
+
+        <div id="question">
+            <p>Did you do anything for yourself today that made you happy?</p>
+            <input type="radio" id="selfHappinessYes" name="selfHappiness" value="yes">
+            <label for="selfHappinessYes">Yes</label>
+            <input type="radio" id="selfHappinessNo" name="selfHappiness" value="no">
+            <label for="selfHappinessNo">No</label>
+        </div>
+
+        <div id="question">
+            <p>What is something that made you smile today?</p>
+            <input type="text" id="smileInput" placeholder="Your answer here">
+        </div>
+
+        <div id="question">
+            <p>Did anything unusual or interesting happen today?</p>
+            <input type="radio" id="unusualYes" name="unusual" value="yes">
+            <label for="unusualYes">Yes</label>
+            <input type="radio" id="unusualNo" name="unusual" value="no">
+            <label for="unusualNo">No</label>
+        </div>
+
+        <div id="question">
+            <p>Did you eat dinner na?</p>
+            <input type="radio" id="dinnerYes" name="ateDinner" value="yes">
+            <label for="dinnerYes">Yes</label>
+            <input type="radio" id="dinnerNo" name="ateDinner" value="no">
+            <label for="dinnerNo">No</label>
+        </div>
+
+        <div id="yes-no-buttons">
+            <a href="https://m.me/mickie.carcasona">
+                <button id="submitButton">Submit</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
